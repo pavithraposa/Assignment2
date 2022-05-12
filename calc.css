@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background-color:rgba(23, 146, 228, 0.637) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+    background-color: #fff;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.5);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;    
+}
+.history{
+    position: relative;
+    max-width: 400px;
+    min-height: 500px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;  
+    background-color: rgba(31, 191, 231, 0.274);
+    padding: 40px;  
+    align-items:flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.5);
+    font-size: medium;
+    
+}
+.historydisplay{
+
+    background-color: rgba(31, 191, 231, 0.274);
+    padding: 40px;  
+    max-width: 300px;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+.display
+{
+    
+    background-color: rgba(31, 191, 231, 0.274);
+    padding: 40px;  
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.display .previous-operand
+{
+    color: rgba(19, 18, 18, 0.75);
+    font-size: 1.5rem;
+
+}
+.display .current-operand
+{
+    color: rgb(0,0,0);
+    font-size: 2.5rem;
+
+}
+.keypad
+{
+   
+    align-items: center;
+    padding: 50px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 30em;
+
+}
+button
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 46%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-color:#fff;
+    font-weight: 600;
+    font-size: 1.0rem;
+    
+}
+button:hover
+{
+    border-radius: 30%;
+}
+.keypad .numbers
+{
+    background-color: rgba(31, 191, 231, 0.274);
+    
+}
+.keypad .numbers:hover
+{
+    background-color: rgba(28, 136, 167, 0.274);
+}
+.keypad .symbols
+{
+    background-color:rgba(23, 146, 228, 0.637) ;
+}
+.keypad .symbols:hover
+{
+    background-color:rgba(5, 57, 92, 0.637) ;
+}
+.keypad .symbols_multi
+{
+    background-color:rgba(23, 146, 228, 0.637) ;
+}
+.keypad .symbols_multi:hover
+{
+    background-color:rgba(5, 57, 92, 0.637) ;
+}
+.keypad .ac
+{
+    background-color:rgba(73, 238, 122, 0.747) ;
+}
+.keypad .ac:hover
+{
+    background-color:rgba(51, 153, 82, 0.747) ;
+}
+.keypad .equals
+{
+    background-color:rgba(28, 195, 236, 0.747) ;
+}
+.keypad .equals:hover
+{
+    background-color:rgba(5, 94, 114, 0.747) ;
+}
+
